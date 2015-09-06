@@ -32,31 +32,29 @@ void loop() {
       //flag=0;   
   
     
- //SERVOOOOOOOOOOOOOO 1111111111111111111111111111111111111111111111111111111111111111111
+ //SERVO 1
  
  if(state == 'u') { 
 
- //pos2=30;
+
  one.write(60+20);
  delay(10);
 
- //flag=1;
-  //Serial.println("open");
+
  }
 
 
 else if(state == 'd' ) { 
  
- //pos2=90;
+
  one.write(180);
  delay(10);
 
-  //flag=1;
-  //Serial.println("close");
+
  }
  
  
-//SERVOOOOOOOOOOOOO 2222222222222222222222222222222222222222222222222222222222222222222
+//SERVO 2
 
 
 else if(state == 'l' ) { 
@@ -80,11 +78,7 @@ else if(state == 'f' ) {
           delay(10);
  }
  
-// else {
-//   one.write(120);
-//          two.write(150);
-//          delay(1000);
-// }
+ }
 
   }
 }
